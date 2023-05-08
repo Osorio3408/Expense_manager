@@ -11,9 +11,9 @@ function TransactionList() {
         Transacciones:
       </h2>
       {transactions.length === 0 ? (
-        <p className="text-center">No hay transacciones</p>
+        <p className="text-center md:text-left">No hay transacciones</p>
       ) : (
-        <ul className="h-20 md:h-80 w-full overflow-scroll pb-2 md:pb-0 md:overflow-auto md:px-2">
+        <ul className="h-20 md:h-80 w-full mb-2 pb-2 md:pb-0 md:overflow-auto md:px-2">
           {transactions.map((transaction) => {
             return (
               <TransactionItem transaction={transaction} key={transaction.id} />
